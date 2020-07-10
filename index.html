@@ -15,31 +15,41 @@
       </nav>
     </div>
     <!-- search input field-->
-    <section>
-    <div class="sidebar">
-        <h4>Search for a City:</h4>
-        <form class="form-inline" id="city-search">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search
-            </button>
-          </form>
-    </div>
-    </section>
+    <main>
+        <div class="sidebar">
+            <h4>Search for a City:</h4>
+                <form class="form-inline" id="city-search">
+                    <input class="form-control mr-sm-2" type="text" id="city-search-input">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="search-btn">Search
+                    </button>
+                </form>
+        </div>
+  
     <!-- search history-->
-    <section>
+    
         <div>
             <ul class="search-history" id="city-history"></ul>
 
         </div>
     <!-- current weather-->
-        <div class="city-info">
+        <div class="city-info" id="current-forecast">
+            <h2 id="city-date"></h2>
+            <img id="weather-icon" />
+            <p id="current-temp"></p>
+            <p id="current-humidity"></p>
+            <p id="current-wind"></p>
+            <div class="current-uv">
+                <p id="current-uv-number"></p>
+                <span id="current-uv-span"></span>
+            </div>    
 
         </div>
     <!-- 5 day weather forecast-->
-        <div class="day-forcast">
+        <div class="week-forcast">
+            <h2 id="week-forecast-h2">
 
         </div>
-    </section>
+    </main>
  <script src="./assets/js/script.js"></script>
 </body>
 </html>
