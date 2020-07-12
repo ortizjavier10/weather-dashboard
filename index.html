@@ -19,18 +19,16 @@
         <div class="sidebar">
             <h4>Search for a City:</h4>
                 <form class="form-inline" id="city-search">
+                    <label class="city-search-label" id="city-search-label" for="city-search-input">City</label>
                     <input class="form-control mr-sm-2" type="text" id="city-search-input">
                     <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="search-btn">Search
                     </button>
                 </form>
+                <!-- search history-->
+            <ul class="search-history" id="city-history"></ul>    
         </div>
   
-    <!-- search history-->
-    
-        <div>
-            <ul class="search-history" id="city-history"></ul>
-
-        </div>
+   
     <!-- current weather-->
         <div class="city-info" id="current-forecast">
             <h2 id="city-date"></h2>
